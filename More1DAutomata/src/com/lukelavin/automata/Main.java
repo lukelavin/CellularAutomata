@@ -21,8 +21,8 @@ import java.util.List;
 
 public class Main extends GameApplication
 {
-    private final int TILE_SIZE = 5;
-    private final int max = 200;
+    private final int TILE_SIZE = 4;
+    private final int max = 250;
     private final int[][] PERMUTATIONS =
             {{1, 1, 1, 1}, {1, 1, 1, 0}, {1, 1, 0, 1}, {1, 1, 0, 0}, {1, 0, 1, 1}, {1, 0, 1, 0}, {1, 0, 0, 1}, {1, 0, 0, 0},
             //    15            14            13            12            11            10             9             8
@@ -40,10 +40,13 @@ public class Main extends GameApplication
     private GameSettings gameSettings;
 
     private boolean random;
+    private String randomText;
     private int target;
 
     private Label randomLabel;
     private Label targetLabel;
+
+    private boolean paused;
 
     @Override
     protected void initSettings(GameSettings settings)
@@ -53,6 +56,7 @@ public class Main extends GameApplication
         gameSettings.setHeight(1015);
 
         gameSettings.setTitle("Elementary Cellular Automata");
+        gameSettings.setVersion("1.0");
 
         gameSettings.setProfilingEnabled(false);
         gameSettings.setIntroEnabled(false);
@@ -67,11 +71,15 @@ public class Main extends GameApplication
         rulesetNum = 0;
         addRulesetLabel();
 
+        randomText = "Press \"R\" for random rules.";
+        addRandomLabel();
+
         initGrids();
 
         simTimer = FXGL.newLocalTimer();
 
         random = false;
+        paused = false;
     }
 
     private void initGrids()
@@ -94,11 +102,13 @@ public class Main extends GameApplication
                 random = !random;
                 if (random)
                 {
+                    randomText = "Random Rule: ON";
                     addRandomLabel();
                 }
                 else
                 {
-                    getGameScene().removeUINode(randomLabel);
+                    randomText = "Press \"R\" for random rules.";
+                    addRandomLabel();
                 }
             }
         }, KeyCode.R);
@@ -298,6 +308,15 @@ public class Main extends GameApplication
                 getGameScene().addUINode(targetLabel);
             }
         }, KeyCode.BACK_SPACE);
+
+        getInput().addAction(new UserAction("PAUSE")
+        {
+            @Override
+            protected void onActionBegin()
+            {
+                paused = !paused;
+            }
+        }, KeyCode.SPACE);
     }
 
     private void addToTarget(int num)
@@ -316,7 +335,9 @@ public class Main extends GameApplication
 
     private void addRandomLabel()
     {
-        randomLabel = new Label("Random Rule: ON");
+        if(randomLabel != null)
+            getGameScene().removeUINode(randomLabel);
+        randomLabel = new Label(randomText);
         randomLabel.setFont(new Font("Lucida Console", 12));
         randomLabel.setTextFill(Color.BLACK);
         randomLabel.setTranslateX(220);
@@ -327,34 +348,19 @@ public class Main extends GameApplication
     @Override
     protected void onUpdate(double tpf)
     {
-        if(simTimer != null && simTimer.elapsed(Duration.millis(1)))
+        if(!paused)
         {
-            simTimer.capture();
-            nextGen();
-        }
-
-        if(iteration > max - 1)
-        {
-            if(random)
+            if (simTimer != null && simTimer.elapsed(Duration.millis(1)))
             {
-                rulesetNum = (int) (Math.random() * Math.pow(2, 16));
-                ruleset = decimalToBinary(rulesetNum);
-                clearGameScene();
-                getGameWorld().reset();
-                addRulesetLabel();
-                addRandomLabel();
-
-                initGrids();
-                iteration = 0;
+                simTimer.capture();
+                nextGen();
             }
-            else
+
+            if (iteration > max - 1)
             {
-                if (rulesetNum >= Math.pow(2, 16))
+                if (random)
                 {
-                    simTimer = null;
-                } else
-                {
-                    rulesetNum++;
+                    rulesetNum = (int) (Math.random() * Math.pow(2, 16));
                     ruleset = decimalToBinary(rulesetNum);
                     clearGameScene();
                     getGameWorld().reset();
@@ -362,19 +368,40 @@ public class Main extends GameApplication
 
                     initGrids();
                     iteration = 0;
+                } else
+                {
+                    if (rulesetNum >= Math.pow(2, 16))
+                    {
+                        simTimer = null;
+                    } else
+                    {
+                        rulesetNum++;
+                        ruleset = decimalToBinary(rulesetNum);
+                        clearGameScene();
+                        getGameWorld().reset();
+                        addRulesetLabel();
+
+                        initGrids();
+                        iteration = 0;
+                    }
                 }
+
+                //re-add the text at the bottom of the screen
+                if (randomLabel != null)
+                    getGameScene().addUINode(randomLabel);
+                if (targetLabel != null)
+                    getGameScene().addUINode(targetLabel);
             }
-            if(targetLabel != null)
-                getGameScene().addUINode(targetLabel);
         }
     }
 
     Rectangle progressGuide;
     public void nextGen()
     {
+        if(progressGuide != null)
+            getGameScene().removeUINode(progressGuide);
         if(iteration < max - 2)
         {
-            getGameScene().removeUINode(progressGuide);
             progressGuide = new Rectangle(0, (iteration + 2) * TILE_SIZE, getWidth(), 3);
             progressGuide.setFill(Color.GRAY);
             getGameScene().addUINode(progressGuide);
@@ -409,7 +436,7 @@ public class Main extends GameApplication
             int permutation = findMatchingPermutation(neighborhood);
             int result = Integer.parseInt("" + ruleset.charAt(permutation));
             next[index] = result;
-            System.out.println(result);
+            //System.out.println(result);
             if(result == 1)
                 addBlackSquare(index * TILE_SIZE, (iteration + 1) * TILE_SIZE);
         }
