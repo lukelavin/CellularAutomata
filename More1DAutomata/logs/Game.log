@@ -183,3 +183,10 @@ Services: []
 17:42:15.880 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
 17:42:15.880 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
 17:42:15.880 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: BACKGROUND(1000)
+17:50:40.693 [JavaFX Application Thread] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=CLOSE_REQUEST]
+17:50:40.693 [JavaFX Application Thread] DEBUG GameApplication      - Exiting FXGL application
+17:50:40.694 [JavaFX Application Thread] DEBUG FXGL                 - Saving FXGL system data
+17:50:40.696 [JavaFX Application Thread] DEBUG IOTask               - Executing task: writeDataTask(system/fxgl.bundle)
+17:50:40.698 [JavaFX Application Thread] DEBUG FS                   - Writing to: system\fxgl.bundle
+17:50:40.701 [JavaFX Application Thread] DEBUG IOTask               - Task succeeded: writeDataTask(system/fxgl.bundle)
+17:50:40.701 [JavaFX Application Thread] DEBUG GameApplication      - Closing FXGL logger and exiting JavaFX
