@@ -10,5 +10,5 @@ Elementary Cellular Automata, as popularized by Stephen Wolfram, are simple, 1-d
 
 The result of each permutation--a 0 or a 1--composes the 8 bit ruleset represented as a binary number. This is also how the rulesets are named. For example, the unique Rule 30 has an 8 bit ruleset of "00011110." Here's a look at some Elementary Cellular Automata:
 
-![Alt text](/ElementaryCellularAutomata/photos/Elementary Cellular Automata0.02017-07-12T20_20_44.690.png?raw=true "Rule 30") 
-![Alt text](/ElementaryCellularAutomata/photosElementary Cellular Automata0.02017-07-12T20_22_08.003.png?raw=true "Rule 18") 
+![Alt text](/ElementaryCellularAutomata/photos/rule30.png?raw=true "Rule 30") 
+![Alt text](/ElementaryCellularAutomata/photos/rule18.png?raw=true "Rule 18") 
