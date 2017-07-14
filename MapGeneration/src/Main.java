@@ -2,8 +2,10 @@ import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entities;
 import com.almasb.fxgl.entity.GameEntity;
+import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.settings.GameSettings;
 import com.almasb.fxgl.time.LocalTimer;
+import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
@@ -39,17 +41,32 @@ public class Main extends GameApplication
     @Override
     protected void initGame()
     {
-        long seed = System.nanoTime();
-        random = new Random(seed);
-        System.out.println(seed);
-        // 131443460763674
+//        long seed = System.nanoTime();
+//        random = new Random(seed);
+//        System.out.println(seed);
 
-        fillPercent = 45;
+        random = new Random();
+
+        fillPercent = 46;
         fillMap();
         displayMap();
 
         smoothTimer = FXGL.newLocalTimer();
+        smoothTimer.capture();
         smoothCount = 0;
+    }
+
+    @Override
+    protected void initInput()
+    {
+        getInput().addAction(new UserAction("generateMap")
+        {
+            @Override
+            protected void onActionBegin()
+            {
+                initGame();
+            }
+        }, MouseButton.PRIMARY);
     }
 
     @Override

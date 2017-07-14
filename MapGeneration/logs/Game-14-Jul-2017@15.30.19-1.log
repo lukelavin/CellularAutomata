@@ -1,0 +1,143 @@
+15:30:01.768 [FXGL Launcher Thread     ] DEBUG FXGL                 - FXGL logger initialized
+15:30:01.770 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<AudioPlayer>> initialized
+15:30:01.771 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Asset cacheSize=35
+15:30:01.771 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<AssetLoader>> initialized
+15:30:01.772 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<EventBus>> initialized
+15:30:01.774 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+15:30:01.789 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/core/notification.wav
+15:30:01.805 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/menu/select.wav
+15:30:01.806 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/menu/back.wav
+15:30:01.808 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/menu/press.wav
+15:30:01.810 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/fonts/Copperplate_Gothic_Light_Regular.ttf
+15:30:01.930 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/fonts/lucida_console.ttf
+15:30:01.968 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/css/fxgl_dark.css
+15:30:01.968 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/icons/fxgl_icon.png
+15:30:01.981 [FXGL Launcher Thread     ] DEBUG FXGLDisplay          - Using CSS: CSS(externalForm=jar:file:/C:/Users/lukel/Documents/Programming/CellularAutomata/MapGeneration/lib/fxgl-0.3.4-uber.jar!/assets/ui/css/fxgl_dark.css)
+15:30:01.982 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Display>> initialized
+15:30:01.984 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Executor>> initialized
+15:30:01.990 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<NotificationService>> initialized
+15:30:01.990 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Net>> initialized
+15:30:01.999 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Gameplay>> initialized
+15:30:02.004 [FXGL Launcher Thread     ] DEBUG FXGLPooler           - Default pool size for objects = 128
+15:30:02.004 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Pooler>> initialized
+15:30:02.004 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<ExceptionHandler>> initialized
+15:30:02.005 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<UIFactory>> initialized
+15:30:02.005 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<DialogFactory>> initialized
+15:30:02.005 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<SceneFactory>> initialized
+15:30:02.005 [FXGL Launcher Thread     ] DEBUG FXGL                 - Loading FXGL system data
+15:30:02.008 [FXGL Launcher Thread     ] DEBUG IOTask               - Executing task: readDataTask(system/fxgl.bundle)
+15:30:02.010 [FXGL Launcher Thread     ] DEBUG FS                   - Reading from: system\fxgl.bundle
+15:30:02.017 [FXGL Launcher Thread     ] DEBUG IOTask               - Task succeeded: readDataTask(system/fxgl.bundle)
+15:30:02.017 [FXGL Launcher Thread     ] DEBUG Bundle               - Logging bundle: FXGL
+15:30:02.018 [FXGL Launcher Thread     ] DEBUG Bundle               - FXGL.offline.timer.version.check=2017-07-13T23:35:28.234
+15:30:02.018 [FXGL Launcher Thread     ] DEBUG GameApplication      - FXGL configuration complete
+15:30:02.019 [FXGL Launcher Thread     ] INFO  GameApplication      - FXGL configuration took:  0.710 sec
+15:30:02.019 [FXGL Launcher Thread     ] DEBUG GameApplication      - Logging game settings
+Title: Map Generation w/ Cellular Automata
+Version: 0.1
+Width: 800
+Height: 400
+Fullscreen: false
+Intro: false
+Menus: false
+Profiling: false
+App Mode: DEVELOPER
+Menu Style: FXGL_DEFAULT
+Menu Key: ESCAPE
+Services: []
+15:30:02.028 [FXGL Launcher Thread     ] DEBUG GameApplication      - Configuring GameApplication
+15:30:02.029 [FXGL Launcher Thread     ] DEBUG AppStateMachine      - Initializing application states
+15:30:02.031 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+15:30:02.034 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+15:30:02.089 [FXGL Launcher Thread     ] DEBUG GameWorld            - Game world initialized
+15:30:02.120 [FXGL Launcher Thread     ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=400, physics.ppm=50.0
+15:30:02.127 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+15:30:02.143 [FXGL Launcher Thread     ] DEBUG GameScene            - Game scene initialized: 800x400
+15:30:02.160 [FXGL Launcher Thread     ] DEBUG Input                - Registered new binding: Pause - Esc
+15:30:02.168 [FXGL Launcher Thread     ] INFO  GameApplication      - Game configuration took:  0.139 sec
+15:30:02.173 [JavaFX Application Thread] DEBUG FXGLDisplay          - Target size: DoubleProperty [value: 800.0] x DoubleProperty [value: 400.0] @ 1.0
+15:30:02.173 [JavaFX Application Thread] DEBUG FXGLDisplay          - New size:    800.0 x 400.0 @ DoubleProperty [value: 1.0]
+15:30:02.173 [JavaFX Application Thread] DEBUG FXGLDisplay          - Opening primary stage
+15:30:02.204 [JavaFX Application Thread] DEBUG FXGLDisplay          - Stage shown
+15:30:02.205 [JavaFX Application Thread] DEBUG FXGLDisplay          - Root size: 800.0x400.0
+15:30:02.205 [JavaFX Application Thread] DEBUG FXGLDisplay          - Scene size: 800.0x400.0
+15:30:02.205 [JavaFX Application Thread] DEBUG FXGLDisplay          - Stage size: 816.0x439.0
+15:30:02.224 [JavaFX Application Thread] DEBUG GameApplication      - Running preInit()
+15:30:02.226 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - P
+15:30:02.226 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Dev Options - CTRL+0
+15:30:02.226 [JavaFX Application Thread] DEBUG Input                - Registered new binding: generateMap - PRIMARY
+15:30:02.314 [JavaFX Application Thread] DEBUG GameApplication      - Starting main loop
+15:30:02.316 [JavaFX Application Thread] DEBUG StartupState         - STARTUP
+15:30:02.316 [JavaFX Application Thread] DEBUG GameApplication      - Starting new game
+15:30:02.316 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+15:30:02.316 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> LoadingState
+15:30:02.339 [JavaFX Application Thread] WARN  InitAppTask          - Main has no package. Disabling annotations processing
+15:30:02.376 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Clearing previous game
+15:30:02.377 [FXGL Background Thread 1 ] DEBUG GameWorld            - Resetting game world
+15:30:02.377 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Resetting physics world
+15:30:02.377 [FXGL Background Thread 1 ] DEBUG GameScene            - Resetting game scene
+15:30:02.378 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Assets
+15:30:02.378 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Game
+15:30:02.381 [FXGL Background Thread 1 ] DEBUG GameWorld            - Resetting game world
+15:30:02.381 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Resetting physics world
+15:30:02.381 [FXGL Background Thread 1 ] DEBUG GameScene            - Resetting game scene
+15:30:02.399 [FXGL Background Thread 1 ] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:03.348 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Physics
+15:30:03.348 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing UI
+15:30:03.348 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initialization Complete
+15:30:03.349 [FXGL Background Thread 1 ] INFO  InitAppTask          - Game initialization took: 0.972 sec
+15:30:03.357 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+15:30:03.357 [JavaFX Application Thread] DEBUG AppStateMachine      - LoadingState -> PlayState
+15:30:04.129 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:04.457 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:04.457 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:04.458 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:05.430 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:05.700 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:05.701 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:05.701 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:06.302 [JavaFX Application Thread] WARN  FXGLDisplay          - saveScreenshot() failed: java.nio.file.NoSuchFileException: .\Map Generation w\ Cellular Automata0.12017-07-14T15_30_06.131.png
+15:30:06.322 [JavaFX Application Thread] DEBUG FXGLEventBus         - Firing event: NotificationEvent[message=Screenshot failed]
+15:30:06.988 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:07.127 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:07.127 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:07.128 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:07.716 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:07.814 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:07.814 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:07.815 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:08.225 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:08.375 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:08.375 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:08.375 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:08.722 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:08.886 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:08.886 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:08.886 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:10.216 [JavaFX Application Thread] WARN  FXGLDisplay          - saveScreenshot() failed: java.nio.file.NoSuchFileException: .\Map Generation w\ Cellular Automata0.12017-07-14T15_30_10.216.png
+15:30:13.033 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:13.210 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:13.210 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:13.210 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:13.955 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:14.325 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:14.325 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:14.325 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:14.596 [JavaFX Application Thread] WARN  FXGLDisplay          - saveScreenshot() failed: java.nio.file.NoSuchFileException: .\Map Generation w\ Cellular Automata0.12017-07-14T15_30_14.596.png
+15:30:14.866 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:15.111 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:15.111 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:15.111 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:15.602 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:15.800 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:15.800 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:15.800 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:16.241 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:16.427 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:16.428 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:16.428 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:16.849 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+15:30:17.013 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+15:30:17.013 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+15:30:17.013 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+15:30:17.556 [JavaFX Application Thread] WARN  FXGLDisplay          - saveScreenshot() failed: java.nio.file.NoSuchFileException: .\Map Generation w\ Cellular Automata0.12017-07-14T15_30_17.556.png
