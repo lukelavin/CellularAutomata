@@ -16,7 +16,5 @@ The result of each permutation--a 0 or a 1--composes the 8 bit ruleset represent
 ### More 1D Cellular Automata
 Similar to Elementary Cellular Automata, these are also 1-dimensional, meaning each generation is represented by a single row of cells. However, unlike the elementary cellular automata, the neighborhood of cells determining state also includes the cell 2 generations back. This extra neighborhood cell doubles the number of bits in the ruleset and increases the total possible permutations from 256 to 65536. Here are some of these more complex automata:
 ![ ](/More1DAutomata/screenshots/rule406.png?raw=true "Rule 406") 
-![ ](/More1DAutomata/screenshots/rule24907.png?raw=true "Rule 24907") 
-![ ](/More1DAutomata/screenshots/rule34684.png?raw=true "Rule 34684") 
 ![ ](/More1DAutomata/screenshots/rule42297.png?raw=true "Rule 42297") 
 ![ ](/More1DAutomata/screenshots/rule46230.png?raw=true "Rule 46230") 
