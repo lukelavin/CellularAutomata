@@ -22,8 +22,8 @@ Similar to Elementary Cellular Automata, these are also 1-dimensional, meaning e
 ## Procedural Map Generation Using Cellular Automata
 As I was looking for more practical applications of these automata aside from pretty patterns, I came across the idea to use randomness combined with the strict rules of automata to create procedurally generated enviornments. This project uses a randomly filled tile grid and turns it into a cave-style environment after a few generations of cellular automata. Here's what it looks like.
 
-Randomly filled :
+#### Randomly filled :
 ![ ](/MapGeneration/screenshots/before.png?raw=true "Before") 
 
-After 5 generations of automata:
+#### After 5 generations of automata:
 ![ ](/MapGeneration/screenshots/after.png?raw=true "After") 
