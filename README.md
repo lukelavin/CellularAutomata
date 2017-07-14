@@ -19,7 +19,7 @@ Similar to Elementary Cellular Automata, these are also 1-dimensional, meaning e
 ![ ](/More1DAutomata/screenshots/rule42297.png?raw=true "Rule 42297") 
 ![ ](/More1DAutomata/screenshots/rule46230.png?raw=true "Rule 46230") 
 
-### Procedural Map Generation using Cellular Automata
+### Procedural Map Generation Using Cellular Automata
 As I was looking for more practical applications of these automata aside from pretty patterns, I came across the idea to use randomness combined with the strict rules of automata to create procedurally generated enviornments. This project uses a randomly filled tile grid and turns it into a cave-style environment after a few generations of cellular automata. Here's what it looks like.
 
 Randomly filled :
