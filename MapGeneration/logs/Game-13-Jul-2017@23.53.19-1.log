@@ -1,0 +1,1024 @@
+23:53:12.658 [FXGL Launcher Thread     ] DEBUG FXGL                 - FXGL logger initialized
+23:53:12.660 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<AudioPlayer>> initialized
+23:53:12.661 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Asset cacheSize=35
+23:53:12.662 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<AssetLoader>> initialized
+23:53:12.662 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<EventBus>> initialized
+23:53:12.664 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+23:53:12.680 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/core/notification.wav
+23:53:12.696 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/menu/select.wav
+23:53:12.698 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/menu/back.wav
+23:53:12.700 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/sounds/menu/press.wav
+23:53:12.701 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/fonts/Copperplate_Gothic_Light_Regular.ttf
+23:53:12.783 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/fonts/lucida_console.ttf
+23:53:12.795 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/css/fxgl_dark.css
+23:53:12.796 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/icons/fxgl_icon.png
+23:53:12.808 [FXGL Launcher Thread     ] DEBUG FXGLDisplay          - Using CSS: CSS(externalForm=jar:file:/C:/Users/lukel/Documents/Programming/CellularAutomata/MapGeneration/lib/fxgl-0.3.4-uber.jar!/assets/ui/css/fxgl_dark.css)
+23:53:12.809 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Display>> initialized
+23:53:12.810 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Executor>> initialized
+23:53:12.816 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<NotificationService>> initialized
+23:53:12.817 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Net>> initialized
+23:53:12.826 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Gameplay>> initialized
+23:53:12.839 [FXGL Launcher Thread     ] DEBUG FXGLPooler           - Default pool size for objects = 128
+23:53:12.839 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<Pooler>> initialized
+23:53:12.840 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<ExceptionHandler>> initialized
+23:53:12.840 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<UIFactory>> initialized
+23:53:12.841 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<DialogFactory>> initialized
+23:53:12.841 [FXGL Launcher Thread     ] DEBUG FXGL                 - Service <<SceneFactory>> initialized
+23:53:12.841 [FXGL Launcher Thread     ] DEBUG FXGL                 - Loading FXGL system data
+23:53:12.844 [FXGL Launcher Thread     ] DEBUG IOTask               - Executing task: readDataTask(system/fxgl.bundle)
+23:53:12.848 [FXGL Launcher Thread     ] DEBUG FS                   - Reading from: system\fxgl.bundle
+23:53:12.856 [FXGL Launcher Thread     ] DEBUG IOTask               - Task succeeded: readDataTask(system/fxgl.bundle)
+23:53:12.856 [FXGL Launcher Thread     ] DEBUG Bundle               - Logging bundle: FXGL
+23:53:12.857 [FXGL Launcher Thread     ] DEBUG Bundle               - FXGL.offline.timer.version.check=2017-07-13T23:35:28.234
+23:53:12.857 [FXGL Launcher Thread     ] DEBUG GameApplication      - FXGL configuration complete
+23:53:12.858 [FXGL Launcher Thread     ] INFO  GameApplication      - FXGL configuration took:  0.618 sec
+23:53:12.858 [FXGL Launcher Thread     ] DEBUG GameApplication      - Logging game settings
+Title: Map Generation w/ Cellular Automata
+Version: 0.1
+Width: 800
+Height: 400
+Fullscreen: false
+Intro: false
+Menus: false
+Profiling: false
+App Mode: DEVELOPER
+Menu Style: FXGL_DEFAULT
+Menu Key: ESCAPE
+Services: []
+23:53:12.869 [FXGL Launcher Thread     ] DEBUG GameApplication      - Configuring GameApplication
+23:53:12.869 [FXGL Launcher Thread     ] DEBUG AppStateMachine      - Initializing application states
+23:53:12.872 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+23:53:12.875 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+23:53:12.903 [FXGL Launcher Thread     ] DEBUG GameWorld            - Game world initialized
+23:53:12.934 [FXGL Launcher Thread     ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=400, physics.ppm=50.0
+23:53:12.945 [FXGL Launcher Thread     ] DEBUG FXGLAssetLoader      - Loading from disk: /assets/ui/cursors/fxgl_default.png
+23:53:12.961 [FXGL Launcher Thread     ] DEBUG GameScene            - Game scene initialized: 800x400
+23:53:12.978 [FXGL Launcher Thread     ] DEBUG Input                - Registered new binding: Pause - Esc
+23:53:12.986 [FXGL Launcher Thread     ] INFO  GameApplication      - Game configuration took:  0.117 sec
+23:53:12.994 [JavaFX Application Thread] DEBUG FXGLDisplay          - Target size: DoubleProperty [value: 800.0] x DoubleProperty [value: 400.0] @ 1.0
+23:53:12.994 [JavaFX Application Thread] DEBUG FXGLDisplay          - New size:    800.0 x 400.0 @ DoubleProperty [value: 1.0]
+23:53:12.994 [JavaFX Application Thread] DEBUG FXGLDisplay          - Opening primary stage
+23:53:13.026 [JavaFX Application Thread] DEBUG FXGLDisplay          - Stage shown
+23:53:13.026 [JavaFX Application Thread] DEBUG FXGLDisplay          - Root size: 800.0x400.0
+23:53:13.026 [JavaFX Application Thread] DEBUG FXGLDisplay          - Scene size: 800.0x400.0
+23:53:13.027 [JavaFX Application Thread] DEBUG FXGLDisplay          - Stage size: 816.0x439.0
+23:53:13.060 [JavaFX Application Thread] DEBUG GameApplication      - Running preInit()
+23:53:13.062 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - P
+23:53:13.063 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Dev Options - CTRL+0
+23:53:13.098 [JavaFX Application Thread] DEBUG GameApplication      - Starting main loop
+23:53:13.100 [JavaFX Application Thread] DEBUG StartupState         - STARTUP
+23:53:13.100 [JavaFX Application Thread] DEBUG GameApplication      - Starting new game
+23:53:13.101 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+23:53:13.101 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> LoadingState
+23:53:13.123 [JavaFX Application Thread] WARN  InitAppTask          - Main has no package. Disabling annotations processing
+23:53:13.126 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Clearing previous game
+23:53:13.126 [FXGL Background Thread 1 ] DEBUG GameWorld            - Resetting game world
+23:53:13.127 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Resetting physics world
+23:53:13.127 [FXGL Background Thread 1 ] DEBUG GameScene            - Resetting game scene
+23:53:13.128 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Assets
+23:53:13.128 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Game
+23:53:13.131 [FXGL Background Thread 1 ] DEBUG GameWorld            - Resetting game world
+23:53:13.131 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Resetting physics world
+23:53:13.131 [FXGL Background Thread 1 ] DEBUG GameScene            - Resetting game scene
+23:53:13.147 [FXGL Background Thread 1 ] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:13.888 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Physics
+23:53:13.888 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing UI
+23:53:13.888 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initialization Complete
+23:53:13.888 [FXGL Background Thread 1 ] INFO  InitAppTask          - Game initialization took: 0.762 sec
+23:53:13.897 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+23:53:13.897 [JavaFX Application Thread] DEBUG AppStateMachine      - LoadingState -> PlayState
+23:53:14.752 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.036 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.036 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.036 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.086 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.103 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.103 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.103 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.174 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.185 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.185 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.185 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.215 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.226 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.226 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.226 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.288 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.297 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.297 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.297 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.325 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.333 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.333 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.333 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.352 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.359 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.359 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.359 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.376 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.382 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.382 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.382 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.421 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.425 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.425 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.425 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.440 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.444 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.444 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.444 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.457 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.461 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.461 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.461 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.475 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.478 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.478 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.479 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.491 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.495 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.495 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.495 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.509 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.542 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.542 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.542 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.553 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.557 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.557 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.557 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.568 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.572 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.572 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.572 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.583 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.587 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.587 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.587 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.598 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.602 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.602 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.602 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.613 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.617 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.617 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.617 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.649 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.652 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.652 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.652 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.663 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.666 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.666 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.666 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.678 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.681 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.681 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.681 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.694 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.698 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.698 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.698 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.712 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.715 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.715 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.715 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.728 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.731 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.732 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.732 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.745 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.748 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.748 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.748 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.761 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.765 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.765 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.765 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.796 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.799 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.799 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.799 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.811 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.815 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.815 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.815 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.828 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.831 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.831 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.831 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.845 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.848 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.848 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.848 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.861 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.865 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.865 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.865 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.878 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.881 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.881 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.881 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.895 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.898 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.898 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.898 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.932 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.935 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.935 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.935 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.945 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.948 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.948 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.948 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.961 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.964 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.965 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.965 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.977 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.981 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.981 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.981 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:15.993 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:15.997 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:15.997 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:15.997 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.009 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.013 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.013 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.013 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.025 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.029 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.029 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.029 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.041 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.045 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.045 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.045 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.057 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.061 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.061 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.061 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.073 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.097 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.097 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.098 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.112 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.115 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.115 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.115 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.128 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.131 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.131 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.131 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.145 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.148 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.148 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.148 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.162 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.165 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.165 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.165 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.179 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.182 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.182 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.182 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.195 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.198 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.198 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.198 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.212 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.215 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.215 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.215 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.229 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.231 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.232 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.232 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.245 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.248 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.248 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.248 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.282 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.285 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.285 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.285 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.295 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.299 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.299 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.299 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.312 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.315 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.315 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.315 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.329 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.332 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.332 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.332 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.346 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.348 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.349 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.349 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.368 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.378 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.378 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.378 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.390 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.393 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.393 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.393 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.410 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.415 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.415 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.416 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.425 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.429 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.429 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.429 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.438 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.441 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.441 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.442 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.452 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.455 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.455 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.455 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.465 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.469 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.469 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.470 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.505 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.509 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.509 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.509 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.518 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.521 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.521 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.521 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.530 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.533 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.534 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.534 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.546 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.549 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.549 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.549 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.563 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.566 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.566 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.566 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.579 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.582 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.582 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.582 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.597 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.601 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.601 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.601 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.613 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.616 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.617 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.617 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.629 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.632 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.632 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.632 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.646 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.649 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.649 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.649 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.662 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.666 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.666 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.666 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.698 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.701 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.701 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.701 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.712 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.715 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.715 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.715 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.730 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.734 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.734 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.734 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.747 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.749 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.750 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.750 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.761 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.764 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.765 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.765 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.777 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.781 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.781 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.781 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.793 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.797 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.797 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.797 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.809 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.812 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.812 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.812 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.825 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.828 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.828 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.829 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.841 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.844 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.844 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.844 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.857 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.860 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.860 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.860 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.873 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.876 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.876 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.876 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.889 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.892 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.892 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.892 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.905 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.908 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.908 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.908 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.939 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.943 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.943 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.943 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.952 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.955 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.955 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.955 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.963 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.966 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.966 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.966 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.980 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:16.983 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:16.983 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:16.983 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:16.997 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.000 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.000 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.000 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.013 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.017 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.017 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.017 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.029 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.033 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.033 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.033 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.046 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.049 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.049 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.049 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.062 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.066 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.066 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.066 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.080 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.083 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.083 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.083 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.096 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.099 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.099 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.099 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.113 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.116 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.116 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.116 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.130 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.132 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.132 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.132 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.145 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.149 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.149 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.149 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.179 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.182 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.182 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.182 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.193 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.197 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.197 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.197 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.209 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.212 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.212 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.212 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.225 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.229 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.229 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.229 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.241 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.244 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.245 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.245 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.257 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.260 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.260 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.260 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.273 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.276 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.276 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.277 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.292 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.296 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.296 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.296 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.313 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.316 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.316 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.316 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.330 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.333 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.333 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.333 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.347 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.350 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.350 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.350 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.363 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.366 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.366 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.366 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.380 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.383 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.383 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.383 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.396 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.399 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.399 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.399 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.413 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.416 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.416 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.416 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.430 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.433 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.433 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.433 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.461 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.464 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.464 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.464 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.472 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.475 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.475 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.475 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.484 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.487 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.487 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.487 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.496 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.499 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.499 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.499 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.514 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.517 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.517 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.517 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.530 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.532 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.533 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.533 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.545 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.548 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.548 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.549 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.561 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.564 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.565 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.565 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.577 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.581 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.581 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.581 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.593 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.597 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.597 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.597 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.609 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.612 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.612 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.612 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.625 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.628 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.628 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.628 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.641 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.644 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.644 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.644 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.657 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.660 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.660 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.660 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.673 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.676 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.676 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.676 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.706 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.709 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.709 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.709 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.718 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.721 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.721 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.721 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.730 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.733 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.733 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.733 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.747 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.750 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.750 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.750 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.763 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.767 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.767 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.768 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.781 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.784 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.784 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.785 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.797 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.800 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.800 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.801 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.814 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.817 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.817 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.817 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.830 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.833 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.833 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.833 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.847 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.850 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.850 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.850 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.863 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.867 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.867 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.867 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.880 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.883 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.883 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.884 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.897 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.901 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.901 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.901 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.914 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.917 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.917 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.917 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.929 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.932 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.932 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.932 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.945 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.948 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.948 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.948 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.962 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.965 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.965 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.965 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.978 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:17.981 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:17.981 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:17.981 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:17.998 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.002 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.002 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.002 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.014 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.017 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.017 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.017 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.030 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.033 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.033 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.033 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.047 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.050 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.050 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.050 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.064 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.067 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.067 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.067 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.081 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.084 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.084 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.084 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.097 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.101 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.101 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.101 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.114 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.117 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.117 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.117 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.131 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.134 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.134 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.134 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.147 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.150 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.150 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.150 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.164 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.167 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.167 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.167 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.181 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.183 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.183 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.184 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.198 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.201 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.201 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.201 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.217 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.220 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.220 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.220 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.231 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.234 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.234 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.234 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.247 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.250 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.250 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.250 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.264 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.267 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.267 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.267 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.281 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.285 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.285 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.285 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.298 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.301 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.301 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.301 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.314 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.317 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.317 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.317 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.330 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.333 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.333 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.333 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.345 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.349 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.349 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.349 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.362 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.366 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.366 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.366 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.377 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.380 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.380 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.380 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.393 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.396 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.396 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.396 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.410 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.413 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.413 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.413 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.426 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.429 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.429 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.429 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.442 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.446 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.446 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.446 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.458 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.461 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.461 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.461 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.473 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.476 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.476 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.477 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.489 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.492 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.492 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.492 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.505 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.509 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.509 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.509 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.521 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.525 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.525 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.525 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.537 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.540 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.540 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.540 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.553 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.556 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.556 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.556 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.570 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.573 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.573 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.573 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.585 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.588 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.588 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.588 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.615 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.618 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.618 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.619 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.632 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.636 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.636 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.636 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.648 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.652 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.652 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.652 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.666 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.670 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.670 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.670 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.681 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.684 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.684 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.684 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.697 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.701 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.701 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.701 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.714 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.717 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.717 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.718 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.730 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.733 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.733 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.734 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.745 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.749 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.749 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.749 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.761 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.765 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.765 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.765 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.778 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.781 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.781 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.781 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.794 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.797 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.797 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.797 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.809 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.813 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.813 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.813 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.825 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.828 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.828 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.828 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.842 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.845 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.845 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.845 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.858 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.861 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.861 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.861 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.873 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.876 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.876 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.877 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.889 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.892 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.892 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.892 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.905 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.908 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.908 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.908 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.922 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.925 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.925 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.925 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.948 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.951 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.951 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.951 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.965 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.968 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.968 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.968 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.982 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:18.985 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:18.985 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:18.985 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:18.999 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.002 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.002 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.002 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.015 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.019 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.019 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.019 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.031 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.034 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.034 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.034 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.049 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.052 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.052 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.052 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.065 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.068 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.068 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.068 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.082 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.084 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.084 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.085 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.098 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.101 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.101 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.102 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.114 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.117 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.117 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.118 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.129 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.132 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.132 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.132 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.145 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.149 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.149 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.149 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.161 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.165 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.165 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.165 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.177 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.180 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.180 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.180 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.194 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.197 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.197 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.197 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.210 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.213 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.213 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.213 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.225 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.228 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.228 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.228 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.242 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.244 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.244 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.244 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.257 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.260 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.260 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.260 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.274 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.276 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.276 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.276 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.289 [JavaFX Application Thread] DEBUG GameWorld            - Resetting game world
+23:53:19.292 [JavaFX Application Thread] DEBUG PhysicsWorld         - Resetting physics world
+23:53:19.292 [JavaFX Application Thread] DEBUG GameScene            - Resetting game scene
+23:53:19.292 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+23:53:19.339 [JavaFX Application Thread] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=CLOSE_REQUEST]
+23:53:19.339 [JavaFX Application Thread] DEBUG GameApplication      - Exiting FXGL application
+23:53:19.339 [JavaFX Application Thread] DEBUG FXGL                 - Saving FXGL system data
+23:53:19.340 [JavaFX Application Thread] DEBUG IOTask               - Executing task: writeDataTask(system/fxgl.bundle)
+23:53:19.341 [JavaFX Application Thread] DEBUG FS                   - Writing to: system\fxgl.bundle
+23:53:19.344 [JavaFX Application Thread] DEBUG IOTask               - Task succeeded: writeDataTask(system/fxgl.bundle)
+23:53:19.344 [JavaFX Application Thread] DEBUG GameApplication      - Closing FXGL logger and exiting JavaFX

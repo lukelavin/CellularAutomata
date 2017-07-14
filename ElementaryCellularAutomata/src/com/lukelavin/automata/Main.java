@@ -48,8 +48,8 @@ public class Main extends GameApplication
     @Override
     protected void initGame()
     {
-        ruleset = decimalToBinary(18);
-        rulesetNum = 18;
+        ruleset = decimalToBinary(0);
+        rulesetNum = 0;
         addRulesetLabel();
 
         initGrids();
@@ -76,7 +76,7 @@ public class Main extends GameApplication
 
         if(iteration > getHeight() / TILE_SIZE)
         {
-            if(rulesetNum >= 18)
+            if(rulesetNum >= 255)
             {
                 simTimer = null;
             }
